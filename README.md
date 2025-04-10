@@ -1,38 +1,72 @@
-# Flask API para usuarios aleatorios
+# Random Users Flask API
 
-Este proyecto es una API en Flask que genera 75 usuarios aleatorios utilizando la API de **RandomUser.me**. La API responde con una lista de usuarios en formato JSON.
+A Flask-based REST API that generates 75 random users using the **RandomUser.me** API service. The API responds with a list of users in JSON format.
 
-## Requisitos
+![Python](https://img.shields.io/badge/python-3.6+-blue.svg)
+![Flask](https://img.shields.io/badge/flask-2.0+-green.svg)
 
-Antes de empezar, necesitas tener instalados los siguientes programas:
+## Features
 
-- **Python 3.6+**: Asegúrate de tener una versión reciente de Python instalada en tu sistema.
-- **Pip**: El gestor de paquetes de Python.
-- **Flask**: El framework web que usaremos para crear la API.
+- Fetches 75 randomly generated user profiles
+- Returns clean JSON data
+- CORS enabled for cross-origin requests
+- Simple and lightweight implementation
 
-## Pasos de Instalación
+## Prerequisites
 
-### 1. Instalar Python
+Before getting started, make sure you have the following installed:
 
-Si no tienes Python instalado, sigue estos pasos:
+- **Python 3.6+**: Ensure you have a recent version of Python installed
+- **Pip**: Python's package manager
+- **Git**: (Optional) For cloning the repository
+
+## Installation
+
+### 1. Install Python
+
+If you don't have Python installed:
 
 - **Windows**:
-  1. Ve a la [página oficial de Python](https://www.python.org/downloads/).
-  2. Descarga la versión más reciente de Python para Windows.
-  3. Durante la instalación, asegúrate de marcar la opción **"Add Python to PATH"**.
-  
-### 2. Crear un entorno virtual
+  1. Visit the [official Python website](https://www.python.org/downloads/)
+  2. Download the latest Python version for Windows
+  3. During installation, check the option **"Add Python to PATH"**
 
-Un entorno virtual te permite aislar las dependencias del proyecto. Para crear uno:
+### 2. Clone the Repository
 
-1. Abre la terminal o línea de comandos.
-2. Navega al directorio de tu proyecto.
-3. Ejecuta el siguiente comando para crear un entorno virtual:
+```bash
+git clone https://github.com/yourusername/flask_api.git
+cd flask_api
+```
 
-   **Windows**:
-   ```bash
-   py -3 -m venv .venv
-   .venv\Scripts\activate
-   pip install Flask Flask-cors
-   pip install flask requests
+### 3. Create a Virtual Environment
 
+Isolate project dependencies with a virtual environment:
+
+**Windows**:
+
+```bash
+py -3 -m venv .venv
+.venv\Scripts\activate
+```
+
+### 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+### Running the API
+
+1. Start the Flask server:
+
+    ```bash
+    python app.py
+    ```
+
+2. The API will be available at: `http://localhost:5000/api/users`
+
+### API Endpoints
+
+- `GET /api/users`: Returns a list of 75 random user profiles
