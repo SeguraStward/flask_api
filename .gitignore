@@ -1,0 +1,33 @@
+# Python bytecode and cache files
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Test coverage files
+.coverage*
+
+# Batch files
+*.bat
+
+# IDE and editor files
+.idea/
+.vscode/
+
+# Environment and virtual environment files
+.env
+.venv/
+env/
+venv/
+
+# Distribution and packaging
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
